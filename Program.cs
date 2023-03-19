@@ -53,7 +53,7 @@ async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update, Cancel
         return;
     }
     
-    if (messageText== "poll")
+    if (messageText == "poll")
     {
     Message pollMessage = await botClient.SendPollAsync(
     chatId: chatId,
